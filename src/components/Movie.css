@@ -1,0 +1,39 @@
+.movie{
+    position: relative;
+    border-radius: 3px;
+    width:300px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    margin: 1rem;
+    transition:all 0.5s;
+    background-color: #373b69;
+    overflow:hidden;
+
+}
+.movie>img{
+    max-width:100%;
+}
+.movie-info{
+    padding:1rem;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-info h3{
+    margin:0;
+}
+.movie-over{
+    transition:0.1s transform ease-in-out;
+    color:black;
+    padding:1rem;
+    overflow-y: scroll;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    transform: translateY(100%);
+    background-color: white;
+    max-height: 100%;
+  }
+.movie:hover .movie-over{
+    transform:translateY(0%)
+}
